@@ -15,7 +15,7 @@ Follow the instructions line-by-line.
 Write the command that you used to do this below:
 ----------
 
-
+cd ~
 
 ==========
 1b. Prove that you're in your home directory.
@@ -23,7 +23,7 @@ Write the command that you used to do this below:
 Write the command that you used to do this - as well as its output - below :
 ----------
 
-
+pwd
 
 ==========
 1c. Create a new directory inside your home directory named after this class. Call it "mtec1003-lab-02".
@@ -31,6 +31,7 @@ Write the command that you used to do this - as well as its output - below :
 Write the command that you used to do this:
 ----------
 
+mkdir mtec1003-lab-02
 
 
 ==========
@@ -41,6 +42,7 @@ Write the command that you used to do this:
 What command did you use?
 ----------
 
+$ cd ~/mtec1003-lab-02/
 
 
 ==========
@@ -50,7 +52,10 @@ Then, change into your new directory.
 What two commands did you use?
 ----------
 
+mkdir my_files
 
+Then to change I used 
+$ cd ~/mtec1003-lab-02/my_files
 
 
 ==========
@@ -62,7 +67,8 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+We've created: 
+foo.txt
 
 
 ==========
@@ -71,7 +77,7 @@ Copy and paste the output below.
 What command did you use?
 ----------
 
-
+touch bar.txt
 
 
 
@@ -83,9 +89,10 @@ Also, copy and paste the output of your file listing below.
 ----------
 
 
+cp bar.txt baz.txt
 
-
-
+ls:
+bar.txt  baz.txt  foo.txt
 
 
 
@@ -96,11 +103,10 @@ Write the command that you used to remove the file.
 Copy and paste the output of your file listing below.
 ----------
 
+rm bar.txt
 
-
-
-
-
+ls
+baz.txt  foo.txt
 
 
 ==========
@@ -112,9 +118,10 @@ Copy and paste the output of your file listing below.
 ----------
 
 
+mv foo.txt qux.txt
 
-
-
+ls
+baz.txt  qux.txt
 
 
 
@@ -122,7 +129,7 @@ Copy and paste the output of your file listing below.
 8. Go up one directory so that you're back in ~/mtec1003-lab-02. What command did you use?
 ----------
 
-
+cd .. 
 
 ==========
 9. Try removing the directory called my_files using rmdir.
@@ -130,20 +137,21 @@ Copy and paste the output of your file listing below.
 Write out the command that you used and what happened.
 ----------
 
-
-
+rmdir: failed to remove 'my_files': Directory not empty
 
 
 
 
 ==========
 10. Try removing the directory called my_files using rm.
+It's not that the directory is empty, it's that "my_files" are located a file above the one i'm in 
+cannot delete a non-empty directory
 
 Write out the command that you used and what happened.
 ----------
 
 
-
+rm: cannot remove 'my_files': Is a directory
 
 
 
@@ -160,7 +168,7 @@ $ rm -rf my_files
 (options r = recursive; f = skip confirmation)
 ----------
 
-
+It deleted the full directory!
 
 
 ==========
@@ -174,8 +182,7 @@ Describe what happened below.
 ----------
 
 
-
-
+NO BOOK, NO ANSWER
 
 
 ==========
@@ -189,6 +196,7 @@ Write the command that you used below.  Write the last line of the output below 
 ----------
 
 
+NO BOOK, NO ANSWER
 
 
 
@@ -205,6 +213,7 @@ Write the command that you used below.  Write the last line of the output below.
 
 
 
+NO BOOK, NO ANSWER
 
 
 
@@ -221,26 +230,35 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 
 
+NO BOOK, NO ANSWER
 
 
 
 
 ==========
-16. Describe what situations you would use the following commands for viewing files: less, more, cat, tail, head
+16. Describe what situations you would use the following commands for viewing files:
+less, more, cat, tail, head
 
-(Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
+(Some characteristics that may help your description might be the length of the file, 
+whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
 
 
+use less/more command if the length of the file is significantly longer than can be easily
+navigated in the terminal window
 
+use head when you want to view just the beginning (header) of the file
 
+use tail when you want to view just the end of the file 
 
+Ca: Requires a single argument, the path to the file
 
 ==========
 17.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
 
 
+NO BOOK, NO ANSWER
 
 
 
@@ -249,6 +267,7 @@ Write the command that you used below.  Describe what spacebar and q does after 
 18.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
 
+NO BOOK, NO ANSWER
 
 
 
@@ -261,6 +280,8 @@ Write the command that you used below.
 ----------
 
 
+
+NO BOOK, NO ANSWER
 
 
 ==========
